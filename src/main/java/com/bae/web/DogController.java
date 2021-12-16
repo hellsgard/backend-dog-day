@@ -60,6 +60,12 @@ public class DogController {
 		return ResponseEntity.ok(found);
 	}
 
+	@GetMapping("/getByFriendly/{friendly}")
+	public ResponseEntity<List<Dog>> getDogByFriendly(@PathVariable String friendly) {
+		List<Dog> found = this.service.getDogByFriendly(friendly);
+		return ResponseEntity.ok(found);
+	}
+
 	@PutMapping("/replace/{id}") // 202 - accepted
 	public ResponseEntity<Dog> replaceDog(@PathVariable Integer id, @RequestBody Dog newDog) {
 		Dog body = this.service.replaceDog(id, newDog);
