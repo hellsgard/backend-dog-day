@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 import com.bae.domain.Dog;
 import com.bae.repo.DogRepo;
 
+//test
+
 @Service
 public class DogServiceDB {
 
@@ -40,9 +42,10 @@ public class DogServiceDB {
 		return found;
 	}
 
-	public Dog getDogById(Integer id) {
-		Optional<Dog> found = this.repo.findById(id);
-		return found.get();
+
+	public List<Dog> getDogByFriendly(String friendly) {
+		List<Dog> found = this.repo.findByFriendlyIgnoreCase(friendly);
+		return found;
 	}
 
 	public Dog getDogById(Integer id) {

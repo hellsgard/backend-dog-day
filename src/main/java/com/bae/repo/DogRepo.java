@@ -14,4 +14,6 @@ public interface DogRepo extends JpaRepository<Dog, Integer> {
 
 	List<Dog> findByBreedIgnoreCase(String breed);
 
+	List<Dog> findByFriendlyIgnoreCase(String friendly);
+
 }
