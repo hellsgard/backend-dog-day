@@ -45,6 +45,11 @@ public class DogServiceDB {
 		return found.get();
 	}
 
+	public Dog getDogById(Integer id) {
+		Optional<Dog> found = this.repo.findById(id);
+		return found.get();
+	}
+
 	public Dog replaceDog(Integer id, Dog newDog) {
 		Dog current = this.repo.findById(id).get();
 
