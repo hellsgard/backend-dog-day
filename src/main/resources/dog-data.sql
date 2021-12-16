@@ -4,8 +4,9 @@ INSERT INTO `dog` (
 	friendly,
 	fee
 ) values (
-	'Testdog'
-	'Boxer'
-	'yes'
+	'Testdog',
+	'Boxer',
+	'yes',
 	100
 );
+

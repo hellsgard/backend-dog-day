@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bae.domain.Dog;
 import com.bae.service.DogServiceDB;
+
+@CrossOrigin
 
 @RestController
 public class DogController {
@@ -37,6 +40,12 @@ public class DogController {
 	@GetMapping("/getAll") // 200
 	public ResponseEntity<List<Dog>> getAllDogs() {
 		return ResponseEntity.ok(this.service.getAllDogs());
+	}
+
+	@GetMapping("/getById/{id}")
+	public ResponseEntity<Dog> getDogById(@PathVariable Integer id) {
+		Dog found = this.service.getDogById(id);
+		return ResponseEntity.ok(found);
 	}
 
 	@GetMapping("/getByName/{name}")
