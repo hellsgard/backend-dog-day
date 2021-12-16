@@ -54,7 +54,6 @@ public class DogControllerIntegrationTests {
 
 	}
 
-
 	@Test
 	void getAllTest() throws Exception {
 		List<Dog> testDogs = List.of(new Dog(1, "Testdog", "Boxer", "yes", 100D));
@@ -133,4 +132,6 @@ public class DogControllerIntegrationTests {
 		this.mvc.perform(req).andExpect(checkStatus);
 
 	}
+
 }
+
