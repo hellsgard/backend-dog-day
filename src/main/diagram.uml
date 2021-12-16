@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="38.0" y="-35.5">com</node>
+    <node x="3495.0" y="-35.5">static</node>
+    <node x="3341.0" y="-35.5">org</node>
+    <node x="3185.0" y="-35.5">ch</node>
+    <node x="2979.5" y="-35.5">templates</node>
+    <node x="2817.5" y="-35.5">antlr</node>
+    <node x="2666.5" y="-35.5">aj</node>
+    <node x="2459.0" y="-35.5">META-INF</node>
+    <node x="2258.5" y="-35.5">win32-x86</node>
+    <node x="2019.0" y="-35.5">groovyjarjarasm</node>
+    <node x="1829.5" y="-35.5">groovy</node>
+    <node x="1655.5" y="-35.5">javax</node>
+    <node x="1390.5" y="-35.5">groovyjarjarpicocli</node>
+    <node x="1092.5" y="-35.5">groovyjarjarcommonscli</node>
+    <node x="942.0" y="-35.5">net</node>
+    <node x="697.5" y="-35.5">groovyjarjarantlr</node>
+    <node x="428.0" y="-35.5">mockito-extensions</node>
+    <node x="207.5" y="-35.5">win32-x86-64</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Compact" zoom="0.35347934571666206" showDependencies="true" x="1831.5" y="-20.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

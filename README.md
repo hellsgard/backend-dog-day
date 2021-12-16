@@ -1,68 +1,101 @@
-Coverage: 34%
-# IMS project for BAE NSAC
 
-One Paragraph of project description goes here
+# Software Fundamental project
+## Doggie Daycare
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Helen Gardner
 
-### Prerequisites
+## Introduction
 
-What things you need to install the software and how to install them
+The project spec was to create a CRUD application with the utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training.
+Including but not limited to:
+ * Project management using a Jira board, use cases and tasks needed to complete the project.
+ * Clear Documentation from a design phase describing the architecture you will use for your project.
+ * A relational Database for storage
+ * A functional application created in the OOP language, following best practices and design principles
+ * The application must have a functioning front-end website and integrated API.
+ * A full test suite on the back-end with an acceptable level of coverage.
+ * Code integrated into a version control system
 
-```
-Give examples
-```
+### Technology Stack and pre-requisites for deployment
 
-### Installing
+The application was created using the following stack, including peripherals:
+* Project management - Jira
+* Database - mySQL
+* Backend programming - Java (Eclipse IDE)
+* Frontend programming - JavaScript, HTML and CSS
+* Integration Tests - MockMVC
+* Version control - Git
 
-A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+### Planning and Design
 
-```
-Give the example
-```
+My project idea was to create a register of dogs for a Doggie daycare, consisting of some of the data which they would capture.
 
-And repeat
+The first step was to create a Jira board with the requisite user stories, these were organised into three epics:
+* Backend Architecture
+* Frontend Architecture
+* Styling and Documentation
 
-```
-until finished
-```
+PICTURES
 
-End with an example of getting some data out of the system or using it for a little demo
+These were then done in two sprints, sprint goal one consisting of mostly laying out the functional architecture, with sprint two consisting of the documentation and styling
 
-## Running the tests
 
-Explain how to run the automated tests for this system. Break down into which tests and what they do
+Here is the basic design I envisioned.
 
-### Unit Tests 
+PICTURE
 
-Explain what these tests test, why and how to run them
+## Version control
 
-```
-Give an example
-```
+Two repositories were created, one for the backend and testing, and one for the frontend.
+Both were managed using the dev-feature branch method.
+My repositories were linked with Jira using smart commits so the version control could be tracked via the project management side.
 
-### Integration Tests 
-Explain what these tests test, why and how to run them
+https://github.com/hellsgard/backend-dog-day
 
-```
-Give an example
-```
+https://github.com/hellsgard/frontend-dogday
 
-### And coding style tests
+Some images showing the progression of both repos:
 
-Explain what these tests test and why
+PICTURES
 
-```
-Give an example
-```
 
-## Deployment
+### Databases 
 
-Add additional notes about how to deploy this on a live system
+Production Database using mySQL
+
+PICTURES
+
+H2 database for testing
+Schema and test Data was included via the backend to create the table and insert an entry for testing
+
+PICTURES
+
+
+### Backend 
+The back end of thee project was completed in Java, using a Spring boot framework.
+The dependencies and class structure can be seen here:
+
+UML PICTURE
+
+ECLIPSE PICTURE
+
+### Testing
+
+Integration testing was done on the back end with MockMVC to create a mocked controller class.
+7 tests were run on the main folder covering all queries with a 98.3% coverage on src/main/java
+
+TEST COVERAGE PICTURE
+
+
+## Frontend
+
+The Front end was built using Javascript, HTML and CSS.
+Bootstrap was used for the grid layout, cards and the forms.
+
+Progression from start to end of the week:
+
 
 ## Built With
 
@@ -72,18 +105,13 @@ Add additional notes about how to deploy this on a live system
 
 We use [SemVer](http://semver.org/) for versioning.
 
-## Authors
+## Author
 
-* **Chris Perrins** - *Initial work* - [christophperrins](https://github.com/christophperrins)
-
-## License
-
-This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md) file for details 
-
-*For help in [Choosing a license](https://choosealicense.com/)*
+* **Helen Gardner** - *Full project* - [hellsgard](https://github.com/hellsgard)
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Thankyou to Jordan and Pawel for their help with issues
+
+
+
