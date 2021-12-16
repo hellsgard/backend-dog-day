@@ -37,6 +37,7 @@ The first step was to create a Jira board with the requisite user stories, these
 * Frontend Architecture
 * Styling and Documentation
 
+
 ![image](https://user-images.githubusercontent.com/85687000/146375982-fe325dcc-7ffc-487e-bea7-7528ad96becb.png)
 
 ![image](https://user-images.githubusercontent.com/85687000/146376080-9b7b3342-9272-4aa9-a22d-b608ca037780.png)
@@ -46,6 +47,7 @@ These were then done in two sprints, sprint goal one consisting of mostly laying
 
 
 Here is the basic design I envisioned.
+
 
 ![image](https://user-images.githubusercontent.com/85687000/146376118-31ea1726-4514-445b-b49c-68b0df496f32.png)
 
@@ -60,12 +62,14 @@ https://github.com/hellsgard/backend-dog-day
 https://github.com/hellsgard/frontend-dogday
 
 JIRA SMART COMMITS:
+
 ![image](https://user-images.githubusercontent.com/85687000/146377561-32776908-895c-4583-89fa-0c3dfaff749c.png)
 
 
 Some images showing the progression of both repos:
 
 Front end:
+
 ![image](https://user-images.githubusercontent.com/85687000/146376282-1d0029b4-be93-47fc-bd3b-a95ef1381334.png)
 
 ![image](https://user-images.githubusercontent.com/85687000/146376511-7682bdd0-2d37-4195-9bd4-7f80401121ff.png)
@@ -77,6 +81,7 @@ Front end:
 
 
 Back end:
+
 ![image](https://user-images.githubusercontent.com/85687000/146376473-c8842b21-63cb-4084-84e1-66f4141cdf5a.png)
 
 ![image](https://user-images.githubusercontent.com/85687000/146376617-5e864aa4-b6e6-4c4d-8c00-477d84fca794.png)
@@ -121,6 +126,7 @@ Integration testing was done on the back end with MockMVC to create a mocked con
 
 The Front end was built using Javascript, HTML and CSS.
 Bootstrap was used for the grid layout, cards and the forms.
+Axios handled the http requests with the front end functions coded in Javascript.
 
 Progression from start to end of the week:
 
@@ -128,6 +134,15 @@ Progression from start to end of the week:
 
 ![image](https://user-images.githubusercontent.com/85687000/146377393-afceb55f-9ae6-498e-8661-592d3cd2c0c8.png)
 
+
+Some of the user convenience functions added include an update pop up modal, which pre-fills:
+
+![image](https://user-images.githubusercontent.com/85687000/146436703-a5a592ee-325e-4ace-8ced-4adeeefb1f8e.png)
+
+
+Toasts were used for notifications upon creation and update:
+
+![image](https://user-images.githubusercontent.com/85687000/146436903-1cad1823-8915-4566-acbb-6f35a5cfeb94.png)
 
 
 
