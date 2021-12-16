@@ -110,6 +110,20 @@ public class DogControllerIntegrationTests {
 	}
 
 	@Test
+	void getByFriendlyTest() throws Exception {
+		List<Dog> testDogs = List.of(new Dog(1, "Testdog", "Boxer", "yes", 100D));
+		String json = this.mapper.writeValueAsString(testDogs);
+
+		RequestBuilder req = get("/getByFriendly/yes");
+
+		ResultMatcher checkStatus = status().isOk();
+		ResultMatcher checkBody = content().json(json);
+
+		this.mvc.perform(req).andExpect(checkStatus).andExpect(checkBody);
+
+	}
+
+	@Test
 	void updateTest() throws Exception {
 		Dog updateDog = new Dog(1, "Gerald", "Pug", "no", 150D);
 		String json = this.mapper.writeValueAsString(updateDog);
