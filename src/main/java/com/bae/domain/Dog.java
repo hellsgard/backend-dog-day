@@ -1,22 +1,35 @@
 package com.bae.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Dog {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
+	@Column(nullable = false)
 	private String name;
 
+	@Column(nullable = false)
 	private String breed;
 
-	private Boolean friendly;
+	@Column(nullable = false)
+	private String friendly;
 
+	@Column(nullable = false)
 	private Double fee;
 
 	public Dog() {
 		super();
 	}
 
-	public Dog(String name, String breed, Boolean friendly, Double fee) {
+	public Dog(String name, String breed, String friendly, Double fee) {
 		super();
 		this.name = name;
 		this.breed = breed;
@@ -24,7 +37,7 @@ public class Dog {
 		this.fee = fee;
 	}
 
-	public Dog(int id, String name, String breed, Boolean friendly, Double fee) {
+	public Dog(int id, String name, String breed, String friendly, Double fee) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -57,11 +70,11 @@ public class Dog {
 		this.breed = breed;
 	}
 
-	public Boolean getFriendly() {
+	public String getFriendly() {
 		return friendly;
 	}
 
-	public void setFriendly(Boolean friendly) {
+	public void setFriendly(String friendly) {
 		this.friendly = friendly;
 	}
 
@@ -72,6 +85,7 @@ public class Dog {
 	public void setFee(Double fee) {
 		this.fee = fee;
 	}
+
 
 	@Override
 	public String toString() {
