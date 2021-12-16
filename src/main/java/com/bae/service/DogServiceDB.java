@@ -31,6 +31,7 @@ public class DogServiceDB {
 		return this.repo.findAll();
 	}
 
+
 	public List<Dog> getDogByName(String name) {
 		List<Dog> found = this.repo.findByNameIgnoreCase(name);
 		return found;
@@ -41,14 +42,10 @@ public class DogServiceDB {
 		return found;
 	}
 
+
 	public List<Dog> getDogByFriendly(String friendly) {
 		List<Dog> found = this.repo.findByFriendlyIgnoreCase(friendly);
 		return found;
-	}
-
-	public Dog getDog(Integer id) {
-		Optional<Dog> found = this.repo.findById(id);
-		return found.get();
 	}
 
 	public Dog getDogById(Integer id) {

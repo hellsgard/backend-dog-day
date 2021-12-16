@@ -9,3 +9,4 @@ INSERT INTO `dog` (
 	'yes',
 	100
 );
+
